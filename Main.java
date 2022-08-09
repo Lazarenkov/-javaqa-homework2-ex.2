@@ -4,23 +4,20 @@ public class Main {
         int payment = 1025; //сумма платежа
 
         int bonus;
-        if (payment>=1000) {
-                bonus=payment/100;
+        if (payment >= 1000) {
+            bonus = payment / 100;
         } else {
-                bonus = 0;
+            bonus = 0;
         }
 
 
         System.out.println("Сумма платежа - " + payment + " рублей.");
-        System.out.println("Текущий баланс - " + (amount+payment) + " рублей.");
+        System.out.println("Текущий баланс - " + (amount + payment) + " рублей.");
 
-        if (bonus>0) {
+        if (bonus > 0) {
             System.out.println("Начислено " + (bonus) + " бонусов.");
-    } else {
+        } else {
             System.out.println("Бонусы не начислены, пополнение менее чем на 1000 руб.");
         }
     }
-
-
-
 }
